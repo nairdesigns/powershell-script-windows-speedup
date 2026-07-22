@@ -31,9 +31,11 @@ If the script breaks a dependency you have, or if you simply want to undo the ch
 
 ## Desktop shortcut
 
-This repo includes `Windows Optimize.lnk` (Admin PowerShell launcher).
+This repo includes `Windows Debloat (One-time).lnk` (Admin PowerShell launcher).
 
-To recreate the shortcut after cloning (points at the script beside it, then copies/links to Desktop):
+This script is **one-shot**, not a background service. Run it after a fresh install or major Windows update, then you are done.
+
+To recreate the shortcut after cloning:
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; .\create-desktop-shortcut.ps1
