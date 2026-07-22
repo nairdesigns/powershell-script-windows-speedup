@@ -27,3 +27,14 @@ If the script breaks a dependency you have, or if you simply want to undo the ch
 2. Click the **System Restore...** button.
 3. Click **Next** and select the restore point named **Pre-Terminal-Debloat**.
 4. Click **Next**, then **Finish** to reboot and restore your system to its previous state.
+
+
+## Desktop shortcut
+
+This repo includes `Windows Optimize.lnk` (Admin PowerShell launcher).
+
+To recreate the shortcut after cloning (points at the script beside it, then copies/links to Desktop):
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; .\create-desktop-shortcut.ps1
+```
